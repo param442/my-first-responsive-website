@@ -9,100 +9,57 @@ body {
 .main {
   flex: 1;
 }
-
-h1 {
-  font-size: 5rem;
-}
-
 footer {
   text-align: right;
   color: midnightblue;
 }
-.left .tile-image {
+.left {
   float: left;
 }
 .tile-image {
-  height: 22vh;
+  height: 200px;
+  float: left;
+  margin-right: 50px;
 }
 .card {
-  position: absolute;
   width: 36vw;
 }
 .right {
-  left: 50%;
+  float: right;
 }
-.right .tile-image {
-  float: left;
-  position: relative;
-}
+
 .card-title {
-  position: relative;
-  margin: auto;
-  left: 25px;
-}
-.card-text {
-  position: relative;
-  margin: auto;
-  left: 25px;
-  top: 25px;
+  text-align: center;
+  margin: 1.5vh;
 }
 h1 {
+  font-size: 5rem;
   background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-@media (max-width: 1024px) {
-  h1 {
-    position: relative;
-    display: flex;
-    font-size: 3rem;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    left: -14px;
-  }
-  .card-title {
-    left: 59px;
-  }
-  .tile-image {
-    position: relative;
-    padding: 10px;
-    width: 80vw;
-    height: 35vh;
-    margin: -22px;
-  }
-  .card {
-    position: relative;
-    display: flex;
-    margin-top: 10px;
-    flex-direction: column;
-    margin: 20px;
-    padding: 30px;
-    left: -74px;
-  }
-  .right {
-    justify-content: center;
-    left: -74px;
-  }
-  h2 {
-    top: 10px;
-    font-size: 20px;
-    left: 10px;
-    text-align: center;
-  }
-  .card-text {
-    align-items: center;
-    left: 40px;
-    width: 38vh;
-    left: -14px;
-  }
+@media (max-width: 680px) {
   .logo {
-    height: 10px;
-    margin: 0;
-    float: left;
-    top: -29px;
-    left: -26px;
-    position: relative;
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
   }
 }
